@@ -1,8 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern="icon_1" type="PLAIN_TEXT" />
-      <mapping ext="lock" type="PLAIN_TEXT" />
+      <mapping pattern="fetchlogo.mp4" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
