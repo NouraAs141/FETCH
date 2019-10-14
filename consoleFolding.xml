@@ -1,9 +1,0 @@
-<application>
-  <component name="ConsoleFoldingSettings">
-    <option name="addedPositive">
-      <list>
-        <option value="02-05 19:39:18.200 16449-16449/com.firebaseloginapp E/SpannableStringBuilder: SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length" />
-      </list>
-    </option>
-  </component>
-</application>

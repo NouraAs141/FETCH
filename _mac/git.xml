@@ -1,6 +1,0 @@
-<application>
-  <component name="Git.Application.Settings">
-    <option name="myPathToGit" value="$USER_HOME$/Downloads/git-2.23.0-intel-universal-mavericks.dmg" />
-    <option name="USE_CREDENTIAL_HELPER" value="true" />
-  </component>
-</application>
