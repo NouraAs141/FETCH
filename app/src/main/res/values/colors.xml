@@ -5,4 +5,11 @@
     <color name="colorAccent">#D81B60</color>
     <color name="light_gray">#F4F4F4</color>
     <color name="space_gray">#F7F7F7</color>
+    <color name="toolbar_title">#ffffff</color>
+
+    <color name="text">#212121</color>
+
+    <color name="control_normal">#464A69</color>
+    <color name="fab_pressed">#464A69</color>
+    <color name="background">#000038</color>
 </resources>
