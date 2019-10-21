@@ -19,7 +19,7 @@ import p.fetch.R;
 
 public class FavoriteAdapter extends RecyclerView.Adapter<FavoriteAdapter.ViewHolder> {
 private ArrayList < FavoriteList > favoriteLists;
-        Context context;
+       public  Context context;
 
 public FavoriteAdapter(ArrayList< FavoriteList > favoriteLists, Context context) {
         this.favoriteLists = favoriteLists;
@@ -36,7 +36,7 @@ public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
 @Override
 public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
         FavoriteList fl=favoriteLists.get(i);
-        Picasso.with(context).load(fl.getImage()).into(viewHolder.img);
+       // Picasso.get(context).load(fl.getImage()).into(viewHolder.img);
     viewHolder.iname.setText(fl.getName());
     viewHolder.ides.setText(fl.getDescription());
 
