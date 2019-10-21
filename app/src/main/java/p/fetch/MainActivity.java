@@ -9,9 +9,12 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.MenuItem;
+
 
 import p.fetch.Database.FavoriteDatabase;
 import p.fetch.Fragment.AccountFragment;
@@ -95,6 +98,10 @@ public class MainActivity extends AppCompatActivity {
                     switch(item.getItemId()){
                         case R.id.nav_home:
                             seltectedFragment = new HomeFragment();
+
+//Change Icon color
+                            //.Item account= (ClipData.Item) findViewById(R.id.favbtn);
+                         //   account.
                             break;
                         case R.id.favbtn:
                             seltectedFragment = new FavoriteFragment();
@@ -110,10 +117,6 @@ public class MainActivity extends AppCompatActivity {
             };
 
 
-    //setting up data later
-   /* private void setupData(ArrayList < Item > product_lists) {
-        mAdapter=new ItemAdapter(getApplicationContext(),product_lists);
-        mRecyclerview.setAdapter(mAdapter);
-    }*/
+
 
 }

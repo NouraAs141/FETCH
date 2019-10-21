@@ -22,7 +22,7 @@ VideoView videoView;
 
         //start playing video
         videoView =  (VideoView)findViewById(R.id.videoView);
-        Uri video = Uri.parse("android.resource://"+ getPackageName()+"/"+ R.raw.fetchlogo);
+        Uri video = Uri.parse("android.resource://"+ getPackageName()+"/"+ R.raw.fetchlogo );
         videoView.setVideoURI(video);
 
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
