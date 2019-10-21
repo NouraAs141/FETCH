@@ -32,9 +32,9 @@ private RecyclerView mRecyclerview;
 public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
 
     ArrayList < Item > itemList = new ArrayList <>( );
-    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Bag", "large bag with straps", 3));
-    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Bag", "large bag with straps", 4));
-    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Bag", "large bag with straps", 5));
+    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Android One", "Icon", 3));
+    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Android Two", "large ", 4));
+    itemList.add(new Item(R.drawable.ic_android_black_24dp, "Android Three", "Colored", 5));
 v = inflater.inflate(R.layout.fragment_home , container, false);
 
     mRecyclerview =v.findViewById(R.id.home);

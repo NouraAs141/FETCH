@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import p.fetch.FavoriteList;
+import p.fetch.Fragment.FavoriteFragment;
 import p.fetch.Fragment.HomeFragment;
 import p.fetch.Item;
 import p.fetch.Item_Detail;
@@ -72,18 +73,17 @@ public ItemAdapter (Context context, ArrayList < Item > itemlist){
 
        // Picasso.with(mcontext).load(currentItem.getImageResource()).into(holder.itemImage);
        // holder.itemName.setText(currentItem.getName());
-
+//in home
         if (HomeFragment.favoriteDatabase.favoriteDao().isFavorite(currentItem .getId())==1)
             holder.btnAddFavourite.setImageResource(R.drawable.ic_favorite_);
         else
             holder.btnAddFavourite.setImageResource(R.drawable.ic_favorite_border_gray_24dp);
 
-
         holder.btnAddFavourite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                FavoriteList favoriteList=new FavoriteList();
+          FavoriteList favoriteList=new FavoriteList();
                 favoriteList.setId(currentItem.getId());
                 favoriteList.setImage(currentItem.getImageResource());
                 favoriteList.setName(currentItem.getName());
@@ -104,7 +104,8 @@ int id = currentItem.getId();
 
             }
         });
-    }
+
+            }
 
 
     @Override
@@ -115,6 +116,7 @@ int id = currentItem.getId();
     public static class ItemViewHolder extends RecyclerView.ViewHolder{
 
 public ImageView btnAddFavourite;
+public ImageView DeleteFavourite;
 public ImageView itemImage;
 public TextView itemName;
 public TextView itemDes;
@@ -125,6 +127,7 @@ CardView cardView;
               itemName=itemView.findViewById(R.id.item_name);
            itemDes=itemView.findViewById(R.id.item_description);
             btnAddFavourite=itemView.findViewById(R.id.favorite_button);
+            DeleteFavourite=itemView.findViewById(R.id.delete_favorite);
             cardView =(CardView)itemView.findViewById(R.id.click_cardView);
 
         }
