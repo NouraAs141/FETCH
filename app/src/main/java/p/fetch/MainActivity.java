@@ -98,10 +98,6 @@ public class MainActivity extends AppCompatActivity {
                     switch(item.getItemId()){
                         case R.id.nav_home:
                             seltectedFragment = new HomeFragment();
-
-//Change Icon color
-                            //.Item account= (ClipData.Item) findViewById(R.id.favbtn);
-                         //   account.
                             break;
                         case R.id.favbtn:
                             seltectedFragment = new FavoriteFragment();

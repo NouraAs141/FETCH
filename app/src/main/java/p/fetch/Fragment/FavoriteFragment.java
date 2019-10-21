@@ -24,7 +24,7 @@ import p.fetch.R;
 public class FavoriteFragment extends Fragment  {
 private RecyclerView rv;
     private FavoriteAdapter adapter;
-    public static FavoriteDatabase favoriteDatabase;
+    public static FavoriteDatabase favorite_frag_Database;
 public View v;
 public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
     v= inflater.inflate(R.layout.fragment_favorite , container, false);
@@ -35,7 +35,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle sav
     rv.setLayoutManager(new LinearLayoutManager(v.getContext()));
 
     getFavData( );
-    favoriteDatabase = Room.databaseBuilder(v.getContext(), FavoriteDatabase.class, "myfavdb").allowMainThreadQueries( ).build( );
+    favorite_frag_Database = Room.databaseBuilder(v.getContext(), FavoriteDatabase.class, "myfavdb").allowMainThreadQueries( ).build( );
     return v;
 }
 
