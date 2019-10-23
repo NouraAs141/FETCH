@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,6 +24,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class login extends AppCompatActivity {
     EditText Email, Password;
+    TextView ForgetPassword;
     Button LogInButton, RegisterButton;
     FirebaseAuth mAuth;
     FirebaseAuth.AuthStateListener mAuthListner;
@@ -39,6 +41,8 @@ public class login extends AppCompatActivity {
         LogInButton = (Button) findViewById(R.id.buttonLogin);
 
         RegisterButton = (Button) findViewById(R.id.buttonRegister);
+
+        ForgetPassword = (TextView) findViewById(R.id.forgetpassword);
 
         Email = (EditText) findViewById(R.id.editEmail);
         Password = (EditText) findViewById(R.id.editPassword);
@@ -86,7 +90,20 @@ public class login extends AppCompatActivity {
             }
         });
 
+        // Adding click listener to forgetpassword button
+        ForgetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(login.this, ResetPassword.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
+
+
 
     @Override
     protected void onStart() {

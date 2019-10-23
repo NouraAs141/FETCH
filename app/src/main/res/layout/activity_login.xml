@@ -65,4 +65,26 @@
         android:layout_marginTop="20dp"
         android:text="NOT A USER? | SIGN UP" />
 
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="246dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="315dp"
+        android:clickable="true"
+        android:lineSpacingExtra="12sp"
+        android:text="     Forget password?"
+        android:textAllCaps="true"
+        android:textSize="18sp" />
+
 </RelativeLayout>
