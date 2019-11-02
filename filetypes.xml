@@ -1,0 +1,10 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="fetchlogo.mp4" type="PLAIN_TEXT" />
+      <mapping pattern="raw" type="PLAIN_TEXT" />
+      <mapping ext="jp2" type="PLAIN_TEXT" />
+      <mapping pattern="dimens" type="XML" />
+    </extensionMap>
+  </component>
+</application>
